@@ -1,0 +1,50 @@
+/*
+  Background Information
+*/
+html {
+  background-color: black;
+  overflow: hidden;
+}
+
+/*
+  For mobile devices and small screens
+*/
+
+img {
+  width: 70%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  align-items: center;
+}
+
+#quote {
+  word-break: break-all;
+  font-size: 2em;
+  font-style: italic;
+  font-family: "Work Sans", sans-serif;
+  color: white;
+}
+/*
+  For desktop
+*/
+@media only screen and (min-width: 800px) {
+  
+  .flex-container {
+    flex-direction: row;
+    height: 98vh;
+    padding: auto;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  img{
+    width: 50%;
+    height: 100vh;
+  }
+}
